@@ -72,16 +72,16 @@ public class NewUser extends JFrame implements ActionListener {
             }
             else{
                 if(Admin.isSelected()) {
-                    Admin admin = new Admin(name.getText(), mobile.getText(), id.getText());
-                    Library_Gui.User_List.add(admin);
+                    GUI_Project.Admin admin = new GUI_Project.Admin(name.getText(), mobile.getText(), id.getText());
+                    GUI_Project.Library_Gui.User_List.add(admin);
                     dispose();
-                    Admin ad = new Admin();
+                    GUI_Project.Admin ad = new GUI_Project.Admin();
 
                 }
                 else if(NormalUser.isSelected()){
                     NormalUser nu = new NormalUser(name.getText(), mobile.getText(), id.getText());
                     NormalUSer_name = name.getText();
-                    Library_Gui.User_List.add(nu);
+                    GUI_Project.Library_Gui.User_List.add(nu);
                     NormalUser nu1 = new NormalUser();
                 }
             }

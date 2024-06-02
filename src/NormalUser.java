@@ -38,7 +38,7 @@ public class NormalUser extends User implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==viewbook){
 
-            ViewBook vb = new ViewBook();
+            GUI_Project.ViewBook vb = new GUI_Project.ViewBook();
 
         }
         else if(e.getSource()==SearchBook){
@@ -46,7 +46,7 @@ public class NormalUser extends User implements ActionListener {
             jf.dispose();
         }
         else if(e.getSource()==BorrowBook){
-            Borrow_Book bb = new Borrow_Book();
+            GUI_Project.Borrow_Book bb = new GUI_Project.Borrow_Book();
 
         }
         else if(e.getSource()==ReturnBook){
@@ -54,7 +54,7 @@ public class NormalUser extends User implements ActionListener {
         }
         else if(e.getSource()==exit){
             jf.dispose();
-            new First_Gui();
+            new GUI_Project.First_Gui();
         }
 
     }
